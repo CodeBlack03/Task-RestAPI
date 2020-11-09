@@ -5,7 +5,7 @@ mongoose.Promise = global.Promise;
 
 // Connect MongoDB at default port 27017.
 mongoose.connect(
-  "mongodb://localhost:27017/users",
+  process.env.MONGO_DB_URL,
   {
     useNewUrlParser: true,
     useCreateIndex: true,

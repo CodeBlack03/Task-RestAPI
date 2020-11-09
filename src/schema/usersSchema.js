@@ -53,9 +53,16 @@ const userSchema = new mongoose.Schema(
         },
       },
     ],
+    avatar: {
+      type: Buffer,
+    },
   },
   {
-    timestamps: true,
+    timestamps: {
+      required: true,
+      type: Date,
+      default: Date.now(),
+    },
   }
 );
 //virtual entity - relationship
@@ -71,7 +78,7 @@ userSchema.methods.toJSON = function () {
 
   delete userObject.password;
   delete userObject.tokens;
-
+  delete userObject.avatar;
   return userObject;
 };
 userSchema.methods.generateAuthToken = async function () {
