@@ -10,18 +10,19 @@ A Representational State Transfer Application Package Interface for Task manager
 The task manager api sends a Welcome and Farewell message whenever user creates or delete his/her profile. 
 Passwords are stored in hased form using bcrypt encryption with 10 salt rounds. Token based authentication is
 implemented using Json Web Token, and every route except sign-up and sign-in required authentication to perform.
+Jest framework is used for testing.
 
 
 ## Features
-  ### Create new user
-  ### Login user
-  ### Create tasks: Authentication required.
-  ### Upload a profile pic: Authentication required
-  ### Get Profile details : Authentiation required
-  ### Get tasks of a particular user: Authentication required
-  ### Update profile details: Authentication required.
-  ### Update task description: Authentication required.
-  ### Delete Profile: Authentication required.
-  ### Delete Tasks: Authentication required.
+  - Create new user
+  - Login user
+  - Create tasks: Authentication required.
+  - Upload a profile pic: Authentication required
+  - Get Profile details : Authentiation required
+  - Get tasks of a particular user: Authentication required
+  - Update profile details: Authentication required.
+  - Update task description: Authentication required.
+  - Delete Profile: Authentication required.
+  - Delete Tasks: Authentication required.
   
 
