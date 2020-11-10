@@ -2,8 +2,8 @@
 A Representational State Transfer Application Package Interface for Task manager.
 
 ## Installing
-`npm i `  to install all the dependencies
-`npm run dev` to run the application on server.
+`npm i `  to install all the dependencies, 
+`npm run dev` to run the application on server, 
 `npm run test` to run the tests on the application.
 
 ## Overview
