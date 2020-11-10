@@ -1,17 +1,6 @@
-require("dotenv").config();
-const express = require("express");
-const app = express();
-const port = process.env.PORT || 3000;
-const userRouter = require("./routers/users");
-const taskRouter = require("./routers/tasks");
-const auth = require("./middleware/auth");
-require("./db/mongoose");
+require("dotenv").config({ path: "../config/dev/dev.env" });
+const app = require("./app");
 
-app.use(express.json()); //can fetch json data in post method
+const port = process.env.PORT || 3001;
 
-//----------Users--------------------------------
-app.use(userRouter);
-//----------Tasks--------------------------------
-app.use(taskRouter);
-
-app.listen(port, () => console.log(`Task app listening on port port!`));
+app.listen(3001, () => console.log(`Task app listening on port port!`));

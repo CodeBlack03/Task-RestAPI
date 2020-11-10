@@ -92,7 +92,7 @@ router.patch("/users/me", auth, async (req, res) => {
     //   runValidators: true, //run validations after update
     // });
 
-    res.status(201).send(req.user);
+    res.status(200).send(req.user);
   } catch (err) {
     console.log(err);
     res.status(400).send(err);
